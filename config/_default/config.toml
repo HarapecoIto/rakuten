@@ -9,7 +9,7 @@ hasCJKLanguage = true
 summaryLength = 70
 buildFuture = true
 
-copyright = "&copy;{year}, All Rights Reserved"
+copyright = "&copy; 2022-{year} Harapeco."
 timeout = 10000
 enableEmoji = true
 paginate = 13
