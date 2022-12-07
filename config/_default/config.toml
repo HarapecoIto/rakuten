@@ -48,6 +48,10 @@ googleAnalytics = ""
     notAlternative = true
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
+  category = "categories" # not used. d'not remove.
+  series = "series"       # not used. d'not remove.
+  tag = "tags"            # not used. d'not remove.
+  event = "events"
+  age = "ages"
+  item = "items"
+  
