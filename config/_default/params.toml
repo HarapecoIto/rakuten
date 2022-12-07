@@ -1,6 +1,6 @@
-logoText = "Zzo"
+logoText = "ハッピーギフト"
 logoType = "short" # long, short
-description = "The Zzo theme for Hugo example site."
+description = "お子さまへのギフト選びのサイト"
 custom_css = []
 custom_js = []
 useFaviconGenerator = true # https://www.favicon-generator.org/
