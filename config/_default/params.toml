@@ -14,7 +14,7 @@ notAllowedTypesInArchive = ["about", "talks", "showcase", "publication", "presen
 notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
 
 viewportSize = "normal" # widest, wider, wide, normal, narrow
-enableUiAnimation = true
+enableUiAnimation = false
 hideSingleContentsWhenJSDisabled = false
 enablePinnedPosts = true
 minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
@@ -28,7 +28,7 @@ homeHeaderType = "text" # text, img, slide, typewriter
 hideHomeHeaderWhenMobile = false
 
 # menu
-showMobileMenuTerms = ["tags", "categories", "series"]
+showMobileMenuTerms = ["ages", "events", "items"]
 
 # search
 enableSearch = false
@@ -73,9 +73,9 @@ link = "https://zzossig.io/ko"
 enableBio = false
 enableBioImage = true
 enableSidebar = true
-enableSidebarTags = true
-enableSidebarSeries = true
-enableSidebarCategories = true
+enableSidebarTags = false
+enableSidebarSeries = false
+enableSidebarCategories = false
 enableHomeSidebarTitles = true
 enableListSidebarTitles = true
 enableToc = true

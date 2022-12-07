@@ -117,3 +117,12 @@ other = "kimbie"
 
 [no-contents]
 other = "コンテンツがありません"
+
+[ages]
+other = "年齢別"
+
+[events]
+other = "イベント別"
+
+[items]
+other = "商品別"
