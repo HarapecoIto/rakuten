@@ -1,0 +1,10 @@
+@import 'happy';
+@import 'happycode';
+
+$themes: (
+  happy: $happy,
+);
+
+$codeblock: (
+  happy: $happycode,
+);
