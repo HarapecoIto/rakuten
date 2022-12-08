@@ -1,10 +1,14 @@
 @import 'happy';
 @import 'happycode';
 
-$themes: (
-  happy: $happy,
-);
+$themes: (happy: $happy);
+$codeblock: (happy: $happycode);
 
-$codeblock: (
-  happy: $happycode,
-);
+/**********************************************************/
+/* colors                                                 */
+/**********************************************************/
+$main-color: #0075a9;
+$sub-color: #d8ecf5;
+$hilight-color: #ffffff;
+$hover-color: #FF6188;
+

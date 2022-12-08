@@ -1,0 +1,47 @@
+/**********************************************************/
+/* nav-menu                                               */
+/**********************************************************/
+.navbar__title {
+  font-weight: normal;
+}
+.navbar__menu {
+  color: $sub-color;
+  .navbar__menu-item {
+    font-weight: normal;
+  }
+  .navbar__dropdown--item {
+    background-color: $sub-color;
+    color: $main-color;
+    font-weight: normal;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+/**********************************************************/
+/* nav-menu-mobile                                        */
+/**********************************************************/
+.navbar__burger {
+  span {
+    background-color: $hilight-color !important;
+  }
+}
+.navbarm__collapse {
+  ul {
+    border-top: 6px solid $sub-color;
+    border-bottom: 8px solid $sub-color;
+  }
+  .navbarm__menu--item, .navbarm__menu--subitem {
+    height: 2.5rem;
+    background-color: $sub-color;
+    a {
+      color: $main-color;
+      font-size: 1rem;
+      font-weight: normal;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
