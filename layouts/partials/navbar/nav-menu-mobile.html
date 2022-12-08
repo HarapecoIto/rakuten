@@ -1,0 +1,27 @@
+{{ $current := . }}
+<a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false"
+  data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+</a>
+<div class="navbarm__collapse" data-open="false">
+  <ul dir="{{ $.Param "languagedir" | default "ltr" }}">
+    {{ $current := . }}
+    {{ $_taxonomies := dict "ages" .Site.Taxonomies.ages "events" .Site.Taxonomies.events "items" .Site.Taxonomies.items }}
+    {{ range $key, $taxonomy := $_taxonomies }}
+      <li class="navbarm__menu--item">
+        {{ $uri := print "/" $key "/" }}
+        <a href="{{ $uri | relLangURL }}">
+          {{ i18n $key }}
+          {{ partial "svgs/arrow/keyboard-arrow-down.svg" (dict "width" 18 "height" 18) }}
+        </a>
+      </li>
+      {{ range $index, $element := $taxonomy }}
+        <li class="navbarm__menu--item navbarm__menu--subitem">
+          <a href="{{ $element.Page.RelPermalink }}">{{ $element.Page.Title }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>
