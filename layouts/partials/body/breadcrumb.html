@@ -1,0 +1,20 @@
+<nav class="breadcrumb hide" aria-label="breadcrumbs">
+  <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
+  <ol>
+    <li class="is-active">
+      <a href="{{ .Site.Home.Permalink }}" class="capitalize">{{ .Site.Home.Title }}</a>
+    </li>
+    {{ if .Parent.IsHome }}
+      <li>
+        <a href="{{ .Permalink }}" class="capitalize">{{ .Title }}</a>
+      </li>
+    {{ else }}
+      <li class="is-active">
+        <a href="{{ .Parent.Permalink }}" class="capitalize">{{ .Parent.Title }}</a>
+      </li>
+      <li>
+        <span>{{ .Title }}</span>
+      </li>
+    {{ end }}
+  </ol>
+</nav>
