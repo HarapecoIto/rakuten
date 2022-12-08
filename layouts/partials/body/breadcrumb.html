@@ -1,20 +1,49 @@
+{{ $current := . }}
 <nav class="breadcrumb hide" aria-label="breadcrumbs">
   <script>document.querySelector('.breadcrumb').classList.remove('hide')</script>
   <ol>
-    <li class="is-active">
-      <a href="{{ .Site.Home.Permalink }}" class="capitalize">{{ .Site.Home.Title }}</a>
-    </li>
-    {{ if .Parent.IsHome }}
-      <li>
-        <a href="{{ .Permalink }}" class="capitalize">{{ .Title }}</a>
+    {{ if eq .Kind "taxonomy" }}
+      <li class="is-active">
+        <a href="{{ .Site.Home.Permalink }}" class="capitalize">{{ .Site.Home.Title }}</a>
       </li>
-    {{ else }}
+      <li>
+        <span class="capitalize">{{ i18n .Title }}</span>
+      </li>
+    {{ else if eq .Kind "term" }}
+      <li class="is-active">
+        <a href="{{ .Site.Home.Permalink }}" class="capitalize">{{ .Site.Home.Title }}</a>
+      </li>
       <li class="is-active">
         <a href="{{ .Parent.Permalink }}" class="capitalize">{{ .Parent.Title }}</a>
       </li>
       <li>
-        <span>{{ .Title }}</span>
+        <span class="capitalize">{{ .Title }}</span>
       </li>
+    {{ else if or (eq .Kind "section") (eq .Kind "page") }}
+      {{ $sections := slice . }}
+      {{ $parent := .Parent }}
+      {{ if $parent }}
+        {{ $sections = slice $parent | append $sections }}
+        {{ $parent = $parent.Parent }}
+        {{ if $parent }}
+          {{ $sections = slice $parent | append $sections }}
+          {{ $parent = $parent.Parent }}
+          {{ if $parent }}
+            {{ $sections = slice $parent | append $sections }}    
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ range $section := $sections }}
+        {{ if ne $section $current }}
+          <li class="is-active">
+            <a href="{{ $section.Permalink }}" class="capitalize">{{ $section.Title }}</a>
+          </li>
+        {{ else }}
+          <li>
+            <span class="capitalize">{{ $section.Title }}</span>
+          </li>
+        {{ end }}
+      {{ end }}
     {{ end }}
   </ol>
 </nav>
