@@ -23,5 +23,15 @@
         </li>
       {{ end }}
     {{ end }}
+    {{ range $section := .Site.Sections }}
+      <li class="navbarm__menu--item">
+        <a href="{{ $section.Page.RelPermalink }}">{{ $section.Title }}</a>
+      </li>
+      {{ range $subsection := $section.Sections }}
+        <li class="navbarm__menu--item navbarm__menu--subitem">
+          <a href="{{ $subsection.Page.RelPermalink }}">{{ $subsection.Page.Title }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
   </ul>
 </div>

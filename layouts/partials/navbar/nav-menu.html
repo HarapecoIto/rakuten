@@ -18,9 +18,25 @@
         </div>
       </div>
     {{ else }}
-        <a href="{{ $uri | relLangURL }}" class="navbar__menu-item navbar__slide-down" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
+        <a href="{{ $uri | relLangURL }}" class="navbar__menu-item navbar__slide-down" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"
+          data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
           {{ i18n $key }}
         </a>
     {{ end }}
+  {{ end }}
+  {{ range $section := .Site.Sections }}
+  <div class="navbar__dropdown navbar__slide-down" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
+    <a href="{{ $section.Page.RelPermalink }}" class="navbar__menu-item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
+      {{ $section.Title }}
+      {{ partial "svgs/arrow/keyboard-arrow-down.svg" (dict "width" 18 "height" 18) }}
+    </a>
+    <div class="navbar__dropdown--content">
+    {{ range $subsection := $section.Sections }}
+      <a href="{{ $subsection.Page.RelPermalink }}" class="navbar__dropdown--item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
+        {{ $subsection.Page.Title }}
+      </a>
+    {{ end }}
+    </div>
+  </div>
   {{ end }}
 </div>
