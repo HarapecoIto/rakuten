@@ -53,4 +53,3 @@ googleAnalytics = ""
   tag = "tags"            # not used. d'not remove.
   event = "events"
   age = "ages"
-  item = "items"

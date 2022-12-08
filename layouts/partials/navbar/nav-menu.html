@@ -1,6 +1,6 @@
 {{ $current := . }}
 <div class="navbar__menu">
-  {{ $_taxonomies := dict "ages" .Site.Taxonomies.ages "events" .Site.Taxonomies.events "items" .Site.Taxonomies.items }}
+  {{ $_taxonomies := dict "ages" .Site.Taxonomies.ages "events" .Site.Taxonomies.events }}
   {{ range $key, $taxonomy := $_taxonomies }}
     {{ $uri := print "/" $key "/" }}
     {{ if gt (len $taxonomy) 0 }}

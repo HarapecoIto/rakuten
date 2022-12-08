@@ -8,7 +8,7 @@
 <div class="navbarm__collapse" data-open="false">
   <ul dir="{{ $.Param "languagedir" | default "ltr" }}">
     {{ $current := . }}
-    {{ $_taxonomies := dict "ages" .Site.Taxonomies.ages "events" .Site.Taxonomies.events "items" .Site.Taxonomies.items }}
+    {{ $_taxonomies := dict "ages" .Site.Taxonomies.ages "events" .Site.Taxonomies.events }}
     {{ range $key, $taxonomy := $_taxonomies }}
       <li class="navbarm__menu--item">
         {{ $uri := print "/" $key "/" }}
