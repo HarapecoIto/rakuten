@@ -634,33 +634,45 @@ table:not(.lntable) {
 /**********************************************************/
 /* h2                                                     */
 /**********************************************************/
+h2.single__title {
+  position: relative;
+  margin-top: 3rem;
+  padding: 0.3rem 2rem !important;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $main-color;
+  border-radius: 0 10px 10px 10px;
+  background-color: $sub-color;
+  &::before {
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    top: -2.4rem;
+    left: 0;
+    height: 2.0em;
+    padding: 0 2rem 0 2.5rem;
+    color: $hilight-color;
+    border-radius: 10px 10px 0 0;
+    background-color: $main-color;
+    background-repeat: no-repeat;
+    background-size: 1.2rem 1.2rem;
+    background-position: 1rem .8rem;
+  }
+}
 [data-type=shops] {
   h2.single__title {
-    position: relative;
-    margin-top: 3rem;
-    padding: 0.3rem 2rem !important;
-    text-align: left;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: $main-color;
-    border-radius: 0 10px 10px 10px;
-    background-color: $sub-color;
     &::before {
-      font-size: 1.2rem;
-      font-weight: 500;
-      position: absolute;
-      top: -2.4rem;
-      left: 0;
-      height: 2.0em;
-      padding: 0 2rem 0 2.5rem;
       content: 'shop';
-      color: $hilight-color;
-      border-radius: 10px 10px 0 0;
-      background-color: $main-color;
       background-image: url('/icons/shop.svg');
-      background-repeat: no-repeat;
-      background-size: 1.2rem 1.2rem;
-      background-position: 1rem .8rem;
+    }
+  }
+}
+[data-type=items] {
+  h2.single__title {
+    &::before {
+      content: 'item';
+      background-image: url('/icons/item.svg');
     }
   }
 }
