@@ -4,12 +4,11 @@ date: 2022-12-07T15:48:11+09:00
 description: "シヤチハタ"
 url: /shop/shiyachihata
 ages:
-  - "幼稚園生"
+  - "保育園・幼稚園生"
   - "小学生"
 events:
   - "入園祝い"
-items:
-  - "名前入れ"
+  - "入学祝い（小学校）"
 draft: false
 ---
 
