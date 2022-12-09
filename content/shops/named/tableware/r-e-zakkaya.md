@@ -1,7 +1,7 @@
 ---
-title: "ココチの暮らし百貨店"
+title: "ココチの暮らし雑貨店"
 date: 2022-12-09T03:59:00+09:00
-description: "ココチの暮らし百貨店"
+description: "ココチの暮らし雑貨店"
 url: /shop/r-e-zakkaya
 ages:
   - "幼稚園生"
