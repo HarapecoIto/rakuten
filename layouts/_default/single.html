@@ -21,7 +21,7 @@
       {{ partial "body/tags" . }}
     </div>
     <article class="single__contents" data-dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
-      {{ if eq .Type "shops" }}<div class="shop-logo">{{ .Params.shopLogo | safeHTML }}</div>{{ end }}
+      {{ if eq .Type "shop" }}<div class="shop-logo">{{ .Params.shopLogo | safeHTML }}</div>{{ end }}
       {{ partial "body/toc" . }}
       {{ .Content }}
     </article>

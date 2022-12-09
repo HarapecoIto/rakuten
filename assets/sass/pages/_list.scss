@@ -90,7 +90,7 @@
     }
   }
 }
-[data-type=shops] {
+[data-type=shop] {
   .list__header--title {
     &::before {
       padding-top: .7rem;
@@ -99,7 +99,7 @@
     }
   }
 }
-[data-type=items] {
+[data-type=item] {
   .list__header--title {
     &::before {
       padding-top: .7rem;

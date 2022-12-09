@@ -660,7 +660,7 @@ h2.single__title {
     background-position: 1.1rem .8rem;
   }
 }
-[data-type=shops] {
+[data-type=shop] {
   h2.single__title {
     &::before {
       content: 'shop';
@@ -668,7 +668,7 @@ h2.single__title {
     }
   }
 }
-[data-type=items] {
+[data-type=item] {
   h2.single__title {
     &::before {
       content: 'item';
