@@ -73,7 +73,7 @@ link = "https://zzossig.io/ko"
 # sidebar
 enableBio = false
 enableBioImage = true
-enableSidebar = true
+enableSidebar = false
 enableSidebarTags = false
 enableSidebarSeries = false
 enableSidebarCategories = false
