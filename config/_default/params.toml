@@ -113,6 +113,9 @@ enableComment = true
 disqus_shortname = ""
 commento = false
 
+# photoSwipe
+enablePhotoSwipe = false
+
 [telegram]
   enable = false
   siteId = ""
