@@ -1,7 +1,6 @@
 ---
 title: "くれぴつ"
 date: 2022-12-09T15:48:11+09:00
-description: "くれぴつ"
 url: /shop/crapitsu
 ages:
   - "保育園・幼稚園生"

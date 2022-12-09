@@ -1,7 +1,6 @@
 ---
 title: "名前入りタオルのマミィ"
 date: 2022-12-07T15:48:11+09:00
-description: "名前入りタオルのマミィ"
 url: /shop/mammy
 ages:
   - "保育園・幼稚園生"
