@@ -538,7 +538,7 @@ table:not(.lntable) {
     text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
-    color: $main-color;
+    color: $text-color;
     border-radius: 0 10px 10px 10px;
     background-color: $sub-color;
     font-family: sans-serif;
@@ -576,16 +576,6 @@ table:not(.lntable) {
   }
 }
 
-
-/**********************************************************/
-/* shop logo                                              */
-/**********************************************************/
-.shop-logo {
-  img {
-    display: inline;
-  }
-}
-
 /**********************************************************/
 /* h2                                                     */
 /**********************************************************/
@@ -597,11 +587,33 @@ table:not(.lntable) {
     text-align: left;
     font-size: 1.4rem;
     font-weight: 600;
+    color: $text-color;
     border-radius: 10px;
     background-color: $sub-color;
     background-repeat: no-repeat;
     background-size: 1.6rem 1.6rem;
     background-position: 1.2rem .7rem;
     background-image: url('/icons/item2.svg');
+  }
+}
+
+/**********************************************************/
+/* link                                                   */
+/**********************************************************/
+.single__contents {
+  a:active, a:visited, a:link {
+    color: $text-color;
+  }
+  a:hover {
+    color: $hilight-color;
+  }
+}
+
+/**********************************************************/
+/* shop logo                                              */
+/**********************************************************/
+.shop-logo {
+  img {
+    display: inline;
   }
 }
