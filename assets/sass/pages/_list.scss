@@ -108,6 +108,22 @@
     }
   }
 }
+[data-type=age] {
+  .list__header--title {
+    &::before {
+      content: 'age';
+      background-image: url('/icons/age.svg');
+    }
+  }
+}
+[data-type=event] {
+  .list__header--title {
+    &::before {
+      content: 'event';
+      background-image: url('/icons/event.svg');
+    }
+  }
+}
 
 /**********************************************************/
 /* shop logo                                              */
