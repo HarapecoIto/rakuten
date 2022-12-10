@@ -1,7 +1,7 @@
 ---
 title: "無添加石鹼本舗"
 date: 2022-12-13T08:13:00+09:00
-url: /shop/shiyachihata
+permalinks: /shop/:filename
 age:
   - "赤ちゃん"
   - "保育園・幼稚園生"

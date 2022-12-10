@@ -1,7 +1,7 @@
 ---
 title: "シヤチハタオフィシャルショップ"
 date: 2022-12-07T15:48:11+09:00
-url: /shop/shiyachihata
+permalinks: /shop/:filename
 age:
   - "保育園・幼稚園生"
   - "小学生"

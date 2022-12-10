@@ -1,7 +1,7 @@
 ---
 title: "くれぴつ"
 date: 2022-12-09T15:48:11+09:00
-url: /shop/crapitsu
+permalinks: /shop/:filename
 age:
   - "保育園・幼稚園生"
   - "小学生"
