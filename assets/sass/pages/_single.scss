@@ -4,49 +4,6 @@
   width: 100%;
   overflow-wrap: break-word;
 
-  &__title {
-    font-size: 2.5rem;
-    font-weight: 900;
-    font-family: $title-font;
-    line-height: 3rem;
-    overflow-wrap: break-word;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    
-    @include themify($themes) {
-      color: themed("single-header-title-color");
-    }
-
-    &[data-ani="true"] {
-      @include animation('slide-in-down .2s .3s 1 ease-in both');
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 1.75rem;
-    font-family: $title-font;
-    
-    @include themify($themes) {
-      color: themed("toc-title-color");
-    }
-
-    &[data-ani="true"] {
-      @include animation('slide-in-down .2s .3s 1 ease-in both');
-    }
-  }
-
-  &__shorttitle {
-    font-size: 1.5rem;
-    font-family: $title-font;
-    overflow-wrap: break-word;
-    margin-bottom: 0.25rem;
-    opacity: 0.7;
-
-    @include themify($themes) {
-      color: themed("single-header-title-color");
-    }
-  }
-
   &__meta {
     font-size: 0.8rem;
     margin-bottom: 2rem;
@@ -101,67 +58,6 @@
     line-height: 1.7;
     width: inherit;
     max-width: inherit;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      position: relative;      
-      line-height: 1.25;
-      font-family: $title-font;
-    }
-
-    h1,
-    h2 {
-      padding: 0;
-      color: inherit;
-      font-weight: 900;
-      text-rendering: optimizeLegibility; 
-
-      @include themify($themes) {
-        color: themed("single-contents-title-color");
-      }
-    }
-
-    h3,
-    h4,
-    h5,
-    h6 {
-      @include themify($themes) {
-        color: themed("single-contents-subtitle-color");
-      }
-    }
-
-    h1 {
-      font-size: 2.6rem;
-      margin: 3.5rem 0 1.75rem 0;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      margin: 3.2rem 0 1.5rem 0;
-    }
-
-    h3 {
-      font-size: 1.8rem;
-      margin: 2.8rem 0 1.25rem 0;
-    }
-
-    h4 {
-      font-size: 1.5rem;
-      margin: 2.4rem 0 1rem 0;
-    }
-
-    h5 {
-      font-size: 1.2rem;
-      margin: 2rem 0 0.8rem 0;
-    }
-
-    h6 {
-      font-size: 1rem;
-      margin: 1.5rem 0 0.5rem 0;
-    }
 
     pre {
       padding: 34px 12px 8px;
@@ -634,34 +530,37 @@ table:not(.lntable) {
 /**********************************************************/
 /* title                                                  */
 /**********************************************************/
-h2.single__title {
-  position: relative;
-  margin-top: 3rem;
-  padding: 0.3rem 2rem;
-  text-align: left;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: $main-color;
-  border-radius: 0 10px 10px 10px;
-  background-color: $sub-color;
-  &::before {
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: absolute;
-    top: -2.4rem;
-    left: 0;
-    height: 2.0em;
-    padding: 0 2rem 0 2.5rem;
-    color: $hilight-color;
-    border-radius: 10px 10px 0 0;
-    background-color: $main-color;
-    background-repeat: no-repeat;
-    background-size: 1.2rem 1.2rem;
-    background-position: 1.1rem .8rem;
+.single {
+  .single__title {
+    position: relative;
+    margin: 3rem 0 1rem 0;
+    padding: .6rem 2rem .5rem 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $main-color;
+    border-radius: 0 10px 10px 10px;
+    background-color: $sub-color;
+    font-family: sans-serif;
+    &::before {
+      font-size: 1.2rem;
+      font-weight: 500;
+      position: absolute;
+      top: -2.4rem;
+      left: 0;
+      height: 2.0em;
+      padding: .5rem 2rem 0 2.7rem;
+      color: $hilight-color;
+      border-radius: 10px 10px 0 0;
+      background-color: $main-color;
+      background-repeat: no-repeat;
+      background-size: 1.2rem 1.2rem;
+      background-position: 1.1rem .7rem;
+    }
   }
 }
 [data-type=shop] {
-  h2.single__title {
+  .single__title {
     &::before {
       content: 'shop';
       background-image: url('/icons/shop.svg');
@@ -669,13 +568,14 @@ h2.single__title {
   }
 }
 [data-type=item] {
-  h2.single__title {
+  .single__title {
     &::before {
       content: 'item';
       background-image: url('/icons/item.svg');
     }
   }
 }
+
 
 /**********************************************************/
 /* shop logo                                              */
@@ -693,7 +593,7 @@ h2.single__title {
   h2 {
     display: block;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     text-align: left;
     font-size: 1.2rem;
     font-weight: 600;
