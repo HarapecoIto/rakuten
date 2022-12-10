@@ -119,23 +119,27 @@
 }
 
 /**********************************************************/
-/* h5                                                     */
+/* 2nd level headding                                     */
 /**********************************************************/
-h5.title {
-  display: block;
-  margin: 1rem 0;
-  padding: 1rem;
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: $main-color;
-  border-radius: 10px;
-  background-color: $sub-color;
-  &::before {
-    content: '★';
-    font-size: 1.5rem;
-    color: $main-color;
-    padding: .5rem .5rem 0 .4rem;
+.summary__container {
+  .title {
+    display: block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: $sub-color;
+    &::before {
+      content: '★';
+      font-size: 1.5rem;
+      color: $main-color;
+      padding: .6rem .3rem 0 .2rem;
+    }
+    a:active, a:visited {
+      color: $main-color;
+    }
   }
 }
 
