@@ -141,17 +141,26 @@
   .title {
     display: block;
     margin: 1rem 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 3rem;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     border-radius: 10px;
     background-color: $sub-color;
-    &::before {
-      content: '★';
-      font-size: 1.5rem;
-      color: $main-color;
-      padding: .6rem .3rem 0 .2rem;
+    background-repeat: no-repeat;
+    background-size: 1.6rem 1.6rem;
+    background-position: 1.2rem .7rem;
+    &.shop {
+      background-image: url('/icons/shop2.svg');
+    }
+    &.item {
+      background-image: url('/icons/item2.svg');
+    }
+    &.age {
+      background-image: url('/icons/age2.svg');
+    }
+    &.event {
+      background-image: url('/icons/event2.svg');
     }
     a:active, a:visited {
       color: $main-color;
