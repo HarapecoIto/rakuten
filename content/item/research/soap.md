@@ -2,6 +2,8 @@
 title: 手作り石鹸
 date: 2022-12-11T09:07:00+09:00
 permalinks: /item/:filename
+age:
+  - 低学年
 weight: 1
 ---
 ## 夏休み 自由研究 手作り石けんセット

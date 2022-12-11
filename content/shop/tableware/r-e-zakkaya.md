@@ -1,11 +1,11 @@
 ---
-title: "ココチの暮らし雑貨店"
+title: ココチの暮らし雑貨店
 date: 2022-12-09T03:59:00+09:00
 permalinks: /shop/:filename
 ages:
-  - "保育園・幼稚園生"
+  - 幼稚園
 events:
-  - "入園祝い"
+  - 入園
 draft: false
 ---
 <a href="https://hb.afl.rakuten.co.jp/hgc/2dcc0785.da3a367b.2d823753.c6deaf60/?pc=http%3A%2F%2Fwww.rakuten.co.jp%2Fr-e-zakkaya%2F&link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxIiwiYmFuIjoiMTc5MjM0IiwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hlb/2dcc0785.da3a367b.2d823753.c6deaf60/?sid=1&shop=r-e-zakkaya&size=1&kind=2&me_id=1221594&me_adv_id=179234&t=logo" border="0" style="margin:2px" alt="" title=""></a>

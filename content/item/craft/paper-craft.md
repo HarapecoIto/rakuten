@@ -1,10 +1,10 @@
 ---
-title: "ペーパークラフト"
+title: ペーパークラフト
 date: 2022-12-13T08:13:00+09:00
 permalinks: /item/:filename
 age:
-  - 小学生
-  - 保育園・幼稚園
+  - 幼稚園
+  - 低学年
 event:
   - 夏休み
 draft: false

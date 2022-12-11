@@ -3,11 +3,11 @@ title: "シヤチハタオフィシャルショップ"
 date: 2022-12-07T15:48:11+09:00
 permalinks: /shop/:filename
 age:
-  - "保育園・幼稚園生"
-  - "小学生"
+  - 幼稚園
+  - 低学年
 event:
-  - "入園祝い"
-  - "入学祝い（小学校）"
+  - 入園
+  - 入学
 shopLogo: 
 draft: false
 ---

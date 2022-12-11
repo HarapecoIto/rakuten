@@ -4,7 +4,7 @@ date: 2022-12-11T08:53:00+09:00
 permalinks: /shop/:filename
 age:
   - 赤ちゃん
-  - 保育園・幼稚園生
+  - 幼稚園
 event:
   - 出産
 draft: false

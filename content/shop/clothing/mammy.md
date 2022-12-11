@@ -3,11 +3,11 @@ title: "名前入りタオルのマミィ"
 date: 2022-12-07T15:48:11+09:00
 permalinks: /shop/:filename
 age:
-  - "保育園・幼稚園生"
-  - "小学生"
+  - 幼稚園
+  - 低学年
 event:
-  - "入園祝い"
-  - "入学祝い（小学校）"
+  - 入園
+  - 入学
 draft: false
 ---
 <a href="https://hb.afl.rakuten.co.jp/hgc/2dcf2cd5.15ef22ff.2d823753.c6deaf60/?pc=http%3A%2F%2Fwww.rakuten.co.jp%2Fshisyu%2F&link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxIiwiYmFuIjoiNDgwIiwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hlb/2dcf2cd5.15ef22ff.2d823753.c6deaf60/?sid=1&shop=shisyu&size=1&kind=1&me_id=1199886&me_adv_id=480&t=pict" border="0" style="margin:2px" alt="" title=""></a>

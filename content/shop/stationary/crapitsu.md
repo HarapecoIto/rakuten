@@ -1,13 +1,13 @@
 ---
-title: "くれぴつ"
+title: くれぴつ
 date: 2022-12-09T15:48:11+09:00
 permalinks: /shop/:filename
 age:
-  - "保育園・幼稚園生"
-  - "小学生"
+  - 幼稚園
+  - 低学年
 event:
-  - "入園祝い"
-  - "入学祝い（小学校）"
+  - 入園
+  - 入学
 draft: false
 ---
 <a href="https://hb.afl.rakuten.co.jp/hgc/2dcf4c30.0b00a4f9.2d823753.c6deaf60/?pc=http%3A%2F%2Fwww.rakuten.co.jp%2Fcrapitsu%2F&link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxIiwiYmFuIjoiMTY0NDkzMiIsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hlb/2dcf4c30.0b00a4f9.2d823753.c6deaf60/?sid=1&shop=crapitsu&size=1&kind=2&me_id=1362844&me_adv_id=1644932&t=logo" border="0" style="margin:2px" alt="" title=""></a>

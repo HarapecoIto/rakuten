@@ -1,12 +1,12 @@
 ---
-title: "お守り肌本舗"
+title: お守り肌本舗
 date: 2022-12-13T08:13:00+09:00
 permalinks: /shop/:filename
 age:
-  - "赤ちゃん"
-  - "保育園・幼稚園生"
+  - 赤ちゃん
+  - 幼稚園
 event:
-  - "出産"
+  - 出産
 draft: false
 ---
 <a href="https://hb.afl.rakuten.co.jp/hgc/2de3f5c1.ee7643fd.2d823753.c6deaf60/?pc=https%3A%2F%2Fwww.rakuten.co.jp%2Fomamori%2F&link_type=pict&ut=eyJwYWdlIjoic2hvcCIsInR5cGUiOiJwaWN0IiwiY29sIjoxLCJjYXQiOiIxIiwiYmFuIjoiMjAxNDM1NCIsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hlb/2de3f5c1.ee7643fd.2d823753.c6deaf60/?sid=1&shop=omamori&size=1&kind=2&me_id=1398134&me_adv_id=2014354&t=logo" border="0" style="margin:2px" alt="" title=""></a>

@@ -3,9 +3,10 @@ title: "消しゴムハンコ"
 date: 2022-12-13T08:13:00+09:00
 permalinks: /item/:filename
 age:
-  - "小学生"
+  - 低学年
+  - 高学年
 event:
-  - "夏休み"
+  - 夏休み
 draft: false
 ---
 ## 消しゴムはんこ ほるなびスタートセット
