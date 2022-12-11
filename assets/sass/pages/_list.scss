@@ -192,3 +192,36 @@
 .subtitle {
   font-weight: normal;
 }
+__meta {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+
+  @include flexbox();
+  @include align-items(center);
+  @include flex-wrap(wrap);
+  @include flex-grow(1);
+  @include themify($themes) {
+    color: themed('meta-color');
+  }
+  @media only screen and (max-width: 769px) {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(flex-start);
+  }
+}
+
+/**********************************************************/
+/* hide text                                              */
+/**********************************************************/
+.summary-classic__text p:first-child {
+  ~ p {
+    display: none;
+    visibility: hidden;
+  }
+}
+.summary-classic__text h2 {
+  ~ p {
+    display: block;
+    visibility: visible;
+  }
+}
