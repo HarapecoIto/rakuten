@@ -600,17 +600,6 @@ table:not(.lntable) {
   }
 }
 
-/**********************************************************/
-/* link                                                   */
-/**********************************************************/
-.single__contents {
-  a:active, a:visited, a:link {
-    color: $text-color;
-  }
-  a:hover {
-    color: $hilight-color;
-  }
-}
 
 /**********************************************************/
 /* affiliate link                                         */
@@ -619,5 +608,13 @@ table:not(.lntable) {
   table[border="0"][cellpadding="0"][cellspacing="0"] {
     margin-top: 1rem;
     width: 600px;
+  }
+  > p {
+    > a:active, > a:visited, > a:link {
+      color: $text-color;
+    }
+    >a:hover {
+      color: $hilight-color;
+    }
   }
 }
