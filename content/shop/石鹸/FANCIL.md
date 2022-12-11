@@ -1,7 +1,7 @@
 ---
 title: FANCIL 公式ショップ
 date: 2022-12-13T08:37:00+09:00
-permalinks: /shop/:filename
+permalinks: /shop/fancil
 age:
   - 赤ちゃん
   - 幼稚園

@@ -1,7 +1,6 @@
 ---
-title: "ショップ"
-date: 2019-03-26T08:47:11+01:00
+title: ショップ
+date: 2022-12-13T13:41:00+09:00
 description: ショップ
 weight: 2
 ---
-aaa
