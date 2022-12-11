@@ -6,7 +6,7 @@
 
   &__meta {
     font-size: 0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @include flexbox();
     @include align-items(center);
@@ -573,6 +573,15 @@ table:not(.lntable) {
       content: 'item';
       background-image: url('/icons/item.svg');
     }
+  }
+}
+
+/**********************************************************/
+/* adjust content margin                                  */
+/**********************************************************/
+.single__contents {
+  > p:first-child {
+    margin-bottom: 0;
   }
 }
 
