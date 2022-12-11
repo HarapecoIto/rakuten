@@ -102,7 +102,7 @@
     }
   }
 }
-[data-type=shop] {
+[type=shop] {
   .title {
     &::before {
       content: 'shop';
@@ -110,27 +110,11 @@
     }
   }
 }
-[data-type=item] {
+[type=item] {
   .title {
     &::before {
       content: 'item';
       background-image: url('/icons/item.svg');
-    }
-  }
-}
-[data-type=age] {
-  .title {
-    &::before {
-      content: 'age';
-      background-image: url('/icons/age.svg');
-    }
-  }
-}
-[data-type=event] {
-  .title {
-    &::before {
-      content: 'event';
-      background-image: url('/icons/event.svg');
     }
   }
 }
