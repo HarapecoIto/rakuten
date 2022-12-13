@@ -1,35 +1,34 @@
 {{ $current := . }}
 <div class="navbar__menu">
-  {{ $_taxonomies := dict "age" .Site.Taxonomies.age "event" .Site.Taxonomies.event }}
-  {{ range $key, $taxonomy := $_taxonomies }}
-    {{ $uri := print "/" $key "/" }}
-    {{ if gt (len $taxonomy) 0 }}
+  {{ range $tax, $terms := index $.Site.Data "_terms" }}
+    {{ $uri := print "/" $tax "/" }}
+    {{ if gt (len $terms) 0 }}
       <div class="navbar__dropdown navbar__slide-down" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
         <a href="{{ $uri | relLangURL }}" class="navbar__menu-item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
-          {{ i18n $key }}
+          <div>{{ i18n $tax }}</div>
           {{ partial "svgs/arrow/keyboard-arrow-down.svg" (dict "width" 18 "height" 18) }}
         </a>
         <div class="navbar__dropdown--content">
-          {{ range $index, $element := $taxonomy }}
-            <a href="{{ $element.Page.RelPermalink }}" class="navbar__dropdown--item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
-              {{ $element.Page.Title }}
+          {{ range $term := $terms }}
+            <a href="{{ (print $uri "/" $term "/") | relLangURL }}" class="navbar__dropdown--item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
+              {{ $term }}
             </a>
           {{ end }}
         </div>
       </div>
     {{ else }}
-        <a href="{{ $uri | relLangURL }}" class="navbar__menu-item navbar__slide-down" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"
-          data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
-          {{ i18n $key }}
-        </a>
+      <a href="{{ $uri | relLangURL }}" class="navbar__menu-item navbar__slide-down" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"
+        data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
+        {{ i18n "age" }}
+      </a>
     {{ end }}
   {{ end }}
   {{ range $section := .Site.Sections }}
   <div class="navbar__dropdown navbar__slide-down" data-ani="{{ $.Site.Params.enableUiAnimation | default "true" }}">
-    <a href="{{ $section.Page.RelPermalink }}" class="navbar__menu-item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
+    <span class="navbar__menu-item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
       {{ $section.Title }}
       {{ partial "svgs/arrow/keyboard-arrow-down.svg" (dict "width" 18 "height" 18) }}
-    </a>
+    </span>
     <div class="navbar__dropdown--content">
     {{ range $subsection := $section.Sections }}
       <a href="{{ $subsection.Page.RelPermalink }}" class="navbar__dropdown--item" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">
