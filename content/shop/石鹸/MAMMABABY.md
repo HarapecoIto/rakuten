@@ -3,8 +3,8 @@ title: MAMMABABY
 date: 2022-12-13T08:37:00+09:00
 url: /shop/mammababy
 age:
-  - 赤ちゃん
-  - 幼稚園
+  - 6か月まで
+  - 6か月～1歳
 event:
   - 出産
 draft: false

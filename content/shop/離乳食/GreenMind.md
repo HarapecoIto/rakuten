@@ -3,7 +3,7 @@ title: Green Mind
 date: 2022-12-09T22:02:00+09:00
 url: /shop/green-mind
 age:
-  - 赤ちゃん
+  - 6か月～1歳
 event:
   - 出産
 draft: false
